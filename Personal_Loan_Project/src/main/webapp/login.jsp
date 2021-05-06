@@ -7,7 +7,7 @@
 <title>Login JSP</title>
 </head>
 <body>
-<form action = "loginservlet" >
+<form action = "loginservlet">
 	Enter username :<input type = "text" name = "uname"><br>
 	Enter password :<input type = "password" name = "pass"><br>
 	<input type = "submit" value = "login">
