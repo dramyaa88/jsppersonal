@@ -16,6 +16,24 @@
   	<description></description>
   	<servlet-class>com.serv.demo.First</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>loginservlet2</servlet-name>
+  	<display-name>loginservlet2</display-name>
+  	<description></description>
+  	<servlet-class>com.serv.demo.loginservlet2</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>countryCheck</servlet-name>
+  	<display-name>countryCheck</display-name>
+  	<description></description>
+  	<servlet-class>com.serv.demo.countryCheck</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>phonecountrycheck</servlet-name>
+  	<display-name>phonecountrycheck</display-name>
+  	<description></description>
+  	<servlet-class>com.serv.demo.phonecountrycheck</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>GetAlienController</servlet-name>
   	<url-pattern>/getAlien</url-pattern>
@@ -23,5 +41,17 @@
   <servlet-mapping>
   	<servlet-name>First</servlet-name>
   	<url-pattern>/First</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>loginservlet2</servlet-name>
+  	<url-pattern>/loginservlet2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>countryCheck</servlet-name>
+  	<url-pattern>/countryCheck</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>phonecountrycheck</servlet-name>
+  	<url-pattern>/phonecountrycheck</url-pattern>
   </servlet-mapping>
 </web-app>

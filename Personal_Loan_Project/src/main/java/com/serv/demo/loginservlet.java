@@ -19,20 +19,19 @@ import com.pojo.login;
 public class loginservlet extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		 BusinessLogic1 bs = new BusinessLogic1();
+//		 BusinessLogic1 bs = new BusinessLogic1();
 		 String userId = request.getParameter("uname");   
 	     String password = request.getParameter("pass");
-	     String country = request.getParameter("country");
-	     String mobileNumber = request.getParameter("mobileNumber");
-	     String monthlySalary = request.getParameter("monthlySalary");
-	     String expense = request.getParameter("expense");
+	     
+//	     int monthlySalary = request.getParameter("monthlySalary");
+//	     int expense = request.getParameter("expense");
 	     LoginValidation loginService = new LoginValidation();
 	     boolean result = loginService.authenticateUser(userId, password);
 	     login admin = loginService.getAdminbyAdminId(userId);
 	     if(result==true){
 //	         request.getSession().setAttribute("username", admin);      
-//	         response.sendRedirect("");
-	    	 bs.eligibility(country,monthlySalary, expense);
+	         response.sendRedirect("existUserLoanDetails.jsp");
+	    	 //bs.eligibility(monthlySalary, expense);
 	     }
 	     else{
 	         response.sendRedirect("error.jsp");

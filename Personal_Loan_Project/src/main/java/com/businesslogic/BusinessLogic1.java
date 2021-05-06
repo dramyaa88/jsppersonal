@@ -25,7 +25,7 @@ public class BusinessLogic1 extends loanDetails{
         System.out.println("The maximum loan amount is 200000 and the minimum loan amount is 100000");
     }
 	
-	public void eligibility(String city,int sal, int expense) {
+	public void eligibility(int sal, int expense) {
     	
 		double rand = (int)Math.floor(Math.random()*(9999-1111+1)+1111);
         uv.setOtp(rand);

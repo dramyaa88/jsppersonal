@@ -3,7 +3,6 @@ package com.businesslogic;
 public class BusinessLogic2 extends BusinessLogic1{
 	int principal,totalInterestPayable,rateInPercent=10,EMI;
 	public void loanDetails(int loanAmount,int tenure) {
-		
 		if (eligibility == 1) {
             principal =loanAmount;
             System.out.println(principal);

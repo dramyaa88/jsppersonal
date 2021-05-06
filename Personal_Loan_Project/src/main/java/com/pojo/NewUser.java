@@ -35,29 +35,14 @@ public class NewUser {
 		this.password = password;
 	}
 	public String getCountry() {
-		if(country.equalsIgnoreCase("india"))
-		{
-			System.out.println("you are eligible to obtain loan");
-		}
-		else
-		{
-			System.out.println("Not able to obtain loan as if u are not residing in india");
-		}
+		
 		return country;
 	}
 	public void setCountry(String country) {
 		this.country = country;
 	}
 	public String getMobileNumber() {
-		String regex = "\\d{10}";
-		boolean result = mobileNumber.matches(regex);
-
-		if(result) {
-		    System.out.println("Given phone number is valid");
-		} else {
-		    System.out.println("Given phone number is not valid");
-		    System.exit(0);
-		}
+		
 		return mobileNumber;
 	}
 	public void setMobileNumber(String mobileNumber) {
