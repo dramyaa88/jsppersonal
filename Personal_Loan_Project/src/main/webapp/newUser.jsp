@@ -11,7 +11,7 @@
 <center>
 <h1>New User Login Details</h1>
 </center>
-<form >
+<form action="phonecountrycheck" method = "get">
 
 Enter your Name : <input type = "text" name = "name"><br>
 Enter your UserId : <input type = "text" name = "userId"><br>
@@ -20,8 +20,10 @@ Enter your Country : <input type = "text" name = "country"><br>
 Enter your Mobile Number : <input type = "text" name = "mobileNumber"><br>
 Enter your Pan Number : <input type = "text" name = "panNumber"><br>
 
+<input type = "submit" value = "submit">
+
 </form>
-<%response.sendRedirect("phonecountrycheck.java"); %>
+
 <!--  <h3>Registered successfully</h3>
 <a href = "/Personal_Loan_Project/src/main/webapp/loanDetails.jsp">Go to enter your LoanDetails Page</a>-->
 </body>

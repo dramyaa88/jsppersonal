@@ -10,18 +10,15 @@
 </head>
 <body>
 <h1>Enter your Loan Details</h1>
-<form >
+<form action = "loginservlet22" method="get">
 Enter MonthlySalary : <input type = "number" name = "monthlySalary"><br>
 Enter Expense : <input type = "number" name = "expense"><br>
 Enter LoanAmount : <input type = "number" name = "loanAmount"><br>
 Enter Tenure : <input type = "number" name = "tenure">
+
+<input type = "submit" value = "submit">
 </form>
 
-<%
-BusinessLogic2 n =new BusinessLogic2();
-session.setAttribute("eligibility", 1);
-n.loanDetails(Integer.parseInt(request.getParameter("loanAmount")),Integer.parseInt(request.getParameter("tenure")));
-n.endMessage();
-%>
+
 </body>
 </html>
